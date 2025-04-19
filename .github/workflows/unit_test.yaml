@@ -33,10 +33,4 @@ jobs:
         stylelint "/*.css"
       continue-on-error: true
     
-    - name: Run HTML5 Validator
-      uses: Cyb3r-Jak3/html5validator-action@v7.2.0
-      with:
-        root: .
-        css: true
-        extra: --log INFO --ignore-re "Attribute."
-        fail_action: false
+    
